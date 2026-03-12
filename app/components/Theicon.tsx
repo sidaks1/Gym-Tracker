@@ -2,7 +2,20 @@ import React from 'react'
 
 const Theicon = ({ className, children}: {className?: string, children?: React.ReactNode}) => {
   return (
-    <div className = {`text-[#3aab40] bg-input/30 w-[400px] h-50 border-[4px] border-background py-6 px-5 rounded-[22px] shadow-200 hover:border-input/30 transition-all duration-500 hover:shadow-300 hover:bg-primary-100 ${className}`}>
+    <div
+      className={`
+        flex items-center justify-center
+        w-[400px] h-[160px]
+        rounded-xl
+        border border-[#1e293b]
+        bg-gradient-to-br from-[#0f172a] to-[#020617]
+        shadow-xl shadow-black/40
+        text-[#22c55e]
+        transition-all duration-300
+        hover:shadow-green-500/30 hover:scale-105
+        ${className}
+      `}
+    >
       {children}
     </div>
   )
