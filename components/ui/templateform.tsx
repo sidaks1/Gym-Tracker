@@ -144,10 +144,36 @@ export function TemplateForm({clientday, type, triggerrefresh, closeform}: {clie
                         control={form.control}
                         render={({ field }) => (
                           <Select
+
                             options={searchexercises}
                             placeholder="Select exercise"
-                            styles={{ menuPortal: (base) => ({ ...base, zIndex: 9999 }) }}
                             menuPortalTarget={document.body}
+
+                            styles={{
+                              menuPortal: (base) => ({ ...base, zIndex: 9999 }),
+                            
+                              control: (base) => ({
+                                ...base,
+                                backgroundColor: "#020617",
+                                borderColor: "#1e293b"
+                              }),
+
+                              menu: (base) => ({
+                                ...base,
+                                backgroundColor: "#020617",
+                                color: "white"
+                              }),
+
+                              option: (base, state) => ({
+                                ...base,
+                                backgroundColor: state.isFocused ? "#334155" : "#020617",
+                                color: state.isFocused ? "green" : "green",
+                                cursor: "pointer"
+                              }),
+                            
+                            
+                            }}
+
                             value={searchexercises.find(
                               ex => ex.value === field.value
                             ) || null}

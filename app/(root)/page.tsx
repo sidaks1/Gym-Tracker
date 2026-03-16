@@ -82,7 +82,7 @@ export default function Home() {
               <Theicon>
                 <BrainCircuit className="w-16 h-16"/>
               </Theicon>
-              <p className="text-slate-300 font-medium">AI Coach</p>
+              <p className="text-slate-300 font-medium">Your Templates</p>
             </div>
           </Link>
 
