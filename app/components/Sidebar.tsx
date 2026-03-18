@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Home } from 'lucide-react';
+import { Home, Link } from 'lucide-react';
 import { Pencil } from 'lucide-react';
 import { Banana } from 'lucide-react';
 import { ListCheck } from 'lucide-react';
@@ -12,30 +12,43 @@ const Sidebar = () => {
   return (
     <div className="flex gap-10 flex-col pt-5 pl-5 pr-5 bg-[#141417] border border-r h-screen">
 
-        <Button variant = 'outline' size = "sm">
-            <Home></Home>
-            Home
-        </Button>
+        <Link href="/">
+            <Button variant = 'outline' size = "sm">
+                <Home></Home>
+                Home
+            </Button>
+        </Link>
 
-        <Button variant = 'outline' size = "sm">
-            <Banana></Banana>
-            Macros
-        </Button>
+        <Link href="/macrosgraph">
+            <Button variant = 'outline' size = "sm">
+                <Banana></Banana>
+                Macros
+            </Button>
+        </Link>
 
-        <Button variant = 'outline' size = "sm">
-            <ListCheck></ListCheck>
-            To Do
-        </Button>
+        <Link href="/todo">
+            <Button variant = 'outline' size = "sm">
+                <ListCheck></ListCheck>
+                To Do
+            </Button>
+        </Link>
 
-        <Button variant = 'outline' size = "sm">
-            <UserPen></UserPen>
-            Profile Details
-        </Button>
+        <Link href="/profile">
+            <Button variant = 'outline' size = "sm">
+                <UserPen></UserPen>
+                Profile Details
+            </Button>
+        </Link>
 
-        <Button variant = 'outline' size = "sm">
-            <BrainCircuit></BrainCircuit>
-            AI Chatbot
-        </Button>
+
+        <Link href="/ai-chatbot">
+            <Button variant = 'outline' size = "sm">
+                <BrainCircuit></BrainCircuit>
+                AI Chatbot
+            </Button>
+        </Link>
+
+
     </div>
   )
 }
