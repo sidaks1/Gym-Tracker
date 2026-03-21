@@ -11,31 +11,31 @@ import React from 'react'
 
 const Sidebar = () => {
   return (
-    <div className="flex gap-10 flex-col pt-5 pl-5 pr-5 bg-[#141417] border border-r h-screen">
+    <div className="flex gap-3 flex-col p-4 bg-[#141417] border border-r h-screen">
 
         <Link href="/">
-            <Button variant = 'outline' size = "sm">
+            <Button variant = 'ghost' size = "sm" className="w-full justify-start gap-3">
                 <Home></Home>
                 Home
             </Button>
         </Link>
 
         <Link href="/macrosgraph">
-            <Button variant = 'outline' size = "sm">
+            <Button variant = 'ghost' size = "sm" className="w-full justify-start gap-3">
                 <Banana></Banana>
                 Macros
             </Button>
         </Link>
 
         <Link href="/todo">
-            <Button variant = 'outline' size = "sm">
+            <Button variant = 'ghost' size = "sm" className="w-full justify-start gap-3">
                 <ListCheck></ListCheck>
                 To Do
             </Button>
         </Link>
 
         <Link href="/profile">
-            <Button variant = 'outline' size = "sm">
+            <Button variant = 'ghost' size = "sm" className="w-full justify-start gap-3">
                 <UserPen></UserPen>
                 Profile Details
             </Button>
@@ -43,7 +43,7 @@ const Sidebar = () => {
 
 
         <Link href="/ai-chatbot">
-            <Button variant = 'outline' size = "sm">
+            <Button variant = 'ghost' size = "sm" className="w-full justify-start gap-3">
                 <BrainCircuit></BrainCircuit>
                 AI Chatbot
             </Button>
