@@ -55,7 +55,7 @@ const page = () => {
   }))
 
   return (
-    <div className="min-h-screen bg-[#020617] text-white">
+    <div className="bg-[#020617] text-white">
 
       {/* Header */}
       <div className="pt-10 ml-10">

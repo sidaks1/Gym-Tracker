@@ -7,7 +7,7 @@ import React from 'react'
 const page = () => {
 
   return (
-    <div className="min-h-screen bg-[#020617] text-white">
+    <div className="bg-[#020617] text-white min-h-full">
       <div className="max-w-7xl mx-auto px-6 py-8">
 
         {/* Header */}

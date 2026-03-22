@@ -18,7 +18,6 @@ export default function Home() {
 
       <div className="relative z-10">
 
-        {/* hero */}
         <div className="text-center pt-20 pb-12">
           <h1 className="text-5xl font-bold text-[#22c55e]">Gym Tracker</h1>
           <p className="text-slate-400 mt-4 text-lg">
@@ -33,7 +32,7 @@ export default function Home() {
             <Flame className="text-[#22c55e]" />
             <div>
               <p className="text-sm text-slate-400">Current Streak</p>
-              <p className="text-xl font-bold">5 days</p>
+              <p className="text-xl font-bold">0 days</p>
             </div>
           </div>
 
@@ -41,7 +40,7 @@ export default function Home() {
             <Dumbbell className="text-[#22c55e]" />
             <div>
               <p className="text-sm text-slate-400">Workouts Logged</p>
-              <p className="text-xl font-bold">32</p>
+              <p className="text-xl font-bold">0</p>
             </div>
           </div>
 

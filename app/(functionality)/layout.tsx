@@ -5,17 +5,17 @@ import Sidebar from "../components/Sidebar"
 
 const layout = ({children}: {children: React.ReactNode}) => {
     return (
-        <main className = "font-work-sans">
-        <Navbar></Navbar>
+        <main className = "flex flex-col font-work-sans h-screen">
+          <Navbar></Navbar>
 
-        <div className="flex">
-          <Sidebar></Sidebar>
+          <div className="flex flex-1 overflow-hidden">
+            <Sidebar></Sidebar>
 
-          <div className="flex-1">
-            {children}
-          </div>
+            <div className="flex-1 overflow-y-auto">
+              {children}
+            </div>
           
-        </div>
+          </div>
 
         </main>
         )

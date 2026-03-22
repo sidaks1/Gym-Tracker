@@ -19,7 +19,7 @@ const page = () => {
   const [showform, toggleform] = useState(false)
 
   return (
-    <div className="min-h-screen bg-[#020617] text-white pb-20">
+    <div className="bg-[#020617] text-white pb-20">
 
       {/* Header */}
       <div className="pt-10 ml-10">

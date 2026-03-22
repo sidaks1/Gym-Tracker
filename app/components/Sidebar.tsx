@@ -1,57 +1,65 @@
-import { Button } from "@/components/ui/button"
-import { Home} from 'lucide-react';
-import { Pencil } from 'lucide-react';
-import { Banana } from 'lucide-react';
-import { ListCheck } from 'lucide-react';
-import { UserPen } from 'lucide-react';
-import { BrainCircuit } from 'lucide-react';
-import Link from 'next/link'
-
-import React from 'react'
+import Link from 'next/link';
+import { Home, Banana, ListCheck, UserPen, BrainCircuit } from 'lucide-react';
+import { Button } from "@/components/ui/button";
 
 const Sidebar = () => {
   return (
-    <div className="flex gap-3 flex-col p-4 bg-[#141417] border border-r h-screen">
+    <aside className="flex flex-col justify-between w-64 h-full bg-[#020617] border-r border-[#1e293b] p-4">
 
-        <Link href="/">
-            <Button variant = 'ghost' size = "sm" className="w-full justify-start gap-3">
-                <Home></Home>
-                Home
+      <div>
+        <div className="mb-8">
+          <h1 className="text-lg font-bold text-[#22c55e]">Gym Tracker</h1>
+          <p className="text-xs text-slate-400">Dashboard</p>
+        </div>
+
+        <div className="flex flex-col gap-2">
+          <Link href="/">
+            <Button className="w-full justify-start gap-3 text-slate-300 hover:text-white hover:bg-[#0f172a]" variant="ghost">
+              <Home className="h-4 w-4" />
+              Home
             </Button>
-        </Link>
+          </Link>
 
-        <Link href="/macrosgraph">
-            <Button variant = 'ghost' size = "sm" className="w-full justify-start gap-3">
-                <Banana></Banana>
-                Macros
+          <Link href="/macrosgraph">
+            <Button className="w-full justify-start gap-3 text-slate-300 hover:text-white hover:bg-[#0f172a]" variant="ghost">
+              <Banana className="h-4 w-4" />
+              Macros
             </Button>
-        </Link>
+          </Link>
 
-        <Link href="/todo">
-            <Button variant = 'ghost' size = "sm" className="w-full justify-start gap-3">
-                <ListCheck></ListCheck>
-                To Do
+          <Link href="/todo">
+            <Button className="w-full justify-start gap-3 text-slate-300 hover:text-white hover:bg-[#0f172a]" variant="ghost">
+              <ListCheck className="h-4 w-4" />
+              Workout
             </Button>
-        </Link>
+          </Link>
 
-        <Link href="/profile">
-            <Button variant = 'ghost' size = "sm" className="w-full justify-start gap-3">
-                <UserPen></UserPen>
-                Profile Details
+          <Link href="/profile">
+            <Button className="w-full justify-start gap-3 text-slate-300 hover:text-white hover:bg-[#0f172a]" variant="ghost">
+              <UserPen className="h-4 w-4" />
+              Profile
             </Button>
-        </Link>
+          </Link>
 
-
-        <Link href="/ai-chatbot">
-            <Button variant = 'ghost' size = "sm" className="w-full justify-start gap-3">
-                <BrainCircuit></BrainCircuit>
-                AI Chatbot
+          <Link href="/ai-chatbot">
+            <Button className="w-full justify-start gap-3 text-slate-300 hover:text-white hover:bg-[#0f172a]" variant="ghost">
+              <BrainCircuit className="h-4 w-4" />
+              AI Coach
             </Button>
-        </Link>
+          </Link>
+        </div>
+      </div>
 
+      <div className="border-t border-[#1e293b] pt-4">
+        <div className="bg-[#0f172a] rounded-lg p-3">
+          <p className="text-xs text-slate-400">Today's Progress</p>
+          <p className="text-sm font-semibold text-white mt-1">Keep going 💪</p>
+        </div>
 
-    </div>
+      </div>
+
+    </aside>
   )
 }
 
-export default Sidebar
+export default Sidebar;

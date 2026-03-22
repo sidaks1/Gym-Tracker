@@ -43,7 +43,7 @@ export function ClientDashboard({data}: dataProp) {
   const progressPercent = (completedCount / data.length) * 100
 
   return (
-    <div className="min-h-screen bg-[#020617] text-white p-8">
+    <div className="bg-[#020617] text-white p-8 min-h-full">
       {/* Header */}
       <div className="mb-6">
         <h1 className="text-3xl font-bold text-[#22c55e]">Today's Workout</h1>
