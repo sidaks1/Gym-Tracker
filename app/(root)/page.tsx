@@ -49,12 +49,12 @@ export default function Home() {
         {/* feature cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-5xl mx-auto px-8 pb-20">
 
-          <Link href="/macrosgraph">
+          <Link href="/chatbotai">
             <div className="flex flex-col items-center gap-3">
               <Theicon>
-                <Banana className="w-16 h-16"/>
+                <BrainCircuit className="w-16 h-16"/>
               </Theicon>
-              <p className="text-slate-300 font-medium">Track Macros</p>
+              <p className="text-slate-300 font-medium">Your Templates</p>
             </div>
           </Link>
 
@@ -67,23 +67,25 @@ export default function Home() {
             </div>
           </Link>
 
+
           <Link href="/myprofile">
             <div className="flex flex-col items-center gap-3">
               <Theicon>
                 <UserPen className="w-16 h-16"/>
               </Theicon>
-              <p className="text-slate-300 font-medium">Profile</p>
+              <p className="text-slate-300 font-medium">Exercise Library</p>
             </div>
           </Link>
 
-          <Link href="/chatbotai">
+          <Link href="/macrosgraph">
             <div className="flex flex-col items-center gap-3">
               <Theicon>
-                <BrainCircuit className="w-16 h-16"/>
+                <Banana className="w-16 h-16"/>
               </Theicon>
-              <p className="text-slate-300 font-medium">Your Templates</p>
+              <p className="text-slate-300 font-medium">Track Macros</p>
             </div>
           </Link>
+
 
         </div>
 

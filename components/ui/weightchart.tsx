@@ -34,7 +34,7 @@ const chartData = [
 const chartConfig = {
   desktop: {
     label: "Desktop",
-    color: "var(--chart-1)",
+    color: "#9dffcf",
   },
 } satisfies ChartConfig
 
@@ -68,9 +68,9 @@ export function WeightChartAreaLinear() {
           hover:border-[#22c55e]
           transition-all duration-300">
             <CardHeader>
-            <CardTitle className="text-[#22c55e]">Area Chart - Linear</CardTitle>
+            <CardTitle className="text-[#22c55e]">Area Chart for your weight</CardTitle>
             <CardDescription>
-                Showing total visitors for the last 6 months
+                Showing your weight for the past month
             </CardDescription>
             </CardHeader>
             <CardContent>
@@ -109,10 +109,10 @@ export function WeightChartAreaLinear() {
             <div className="flex w-full items-start gap-2 text-sm">
                 <div className="grid gap-2">
                 <div className="flex items-center gap-2 leading-none font-medium text-[#22c55e]">
-                    Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
+                    Trending up this month <TrendingUp className="h-4 w-4" />
                 </div>
                 <div className="text-muted-foreground flex items-center gap-2 leading-none">
-                    January - June 2024
+                    Last 30 days
                 </div>
                 </div>
             </div>

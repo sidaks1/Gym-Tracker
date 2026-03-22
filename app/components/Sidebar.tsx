@@ -20,33 +20,34 @@ const Sidebar = () => {
             </Button>
           </Link>
 
+          <Link href="/splitchecklist">
+            <Button className="w-full justify-start gap-3 text-slate-300 hover:text-white hover:bg-[#0f172a]" variant="ghost">
+              <ListCheck className="h-4 w-4" />
+              Today's Workout
+            </Button>
+          </Link>
+
+          <Link href="/myprofile">
+            <Button className="w-full justify-start gap-3 text-slate-300 hover:text-white hover:bg-[#0f172a]" variant="ghost">
+              <UserPen className="h-4 w-4" />
+              Exercise Library
+            </Button>
+          </Link>
+
+          <Link href="/chatbotai">
+            <Button className="w-full justify-start gap-3 text-slate-300 hover:text-white hover:bg-[#0f172a]" variant="ghost">
+              <BrainCircuit className="h-4 w-4" />
+                Your Templates
+            </Button>
+          </Link>
+
           <Link href="/macrosgraph">
             <Button className="w-full justify-start gap-3 text-slate-300 hover:text-white hover:bg-[#0f172a]" variant="ghost">
               <Banana className="h-4 w-4" />
               Macros
             </Button>
           </Link>
-
-          <Link href="/todo">
-            <Button className="w-full justify-start gap-3 text-slate-300 hover:text-white hover:bg-[#0f172a]" variant="ghost">
-              <ListCheck className="h-4 w-4" />
-              Workout
-            </Button>
-          </Link>
-
-          <Link href="/profile">
-            <Button className="w-full justify-start gap-3 text-slate-300 hover:text-white hover:bg-[#0f172a]" variant="ghost">
-              <UserPen className="h-4 w-4" />
-              Profile
-            </Button>
-          </Link>
-
-          <Link href="/ai-chatbot">
-            <Button className="w-full justify-start gap-3 text-slate-300 hover:text-white hover:bg-[#0f172a]" variant="ghost">
-              <BrainCircuit className="h-4 w-4" />
-              AI Coach
-            </Button>
-          </Link>
+          
         </div>
       </div>
 
