@@ -167,7 +167,7 @@ export function TemplateForm({clientday, type, triggerrefresh, closeform}: {clie
                               option: (base, state) => ({
                                 ...base,
                                 backgroundColor: state.isFocused ? "#334155" : "#020617",
-                                color: state.isFocused ? "green" : "green",
+                                color: state.isFocused ? "[#22c55e]" : "[#22c55e]",
                                 cursor: "pointer"
                               }),
                             

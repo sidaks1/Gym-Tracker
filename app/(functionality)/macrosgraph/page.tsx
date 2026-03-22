@@ -34,47 +34,9 @@ const page = () => {
       {/* Charts Section */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-12 px-10">
 
-        {/* Calories Card */}
-        <Card className="
-          bg-gradient-to-br from-[#0f172a] to-[#020617]
-          border border-[#1e293b]
-          shadow-2xl shadow-black/40
-          hover:border-[#22c55e]
-          transition-all duration-300
-        ">
-          <CardHeader>
-            <CardTitle className="text-[#22c55e]">
-              Calorie Intake
-            </CardTitle>
-            <CardDescription>
-              Daily calorie tracking overview
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <CalorieChartAreaAxes updatedata={showform} />
-          </CardContent>
-        </Card>
+        <CalorieChartAreaAxes updatedata={showform} />
 
-        {/* Weight Card */}
-        <Card className="
-          bg-gradient-to-br from-[#0f172a] to-[#020617]
-          border border-[#1e293b]
-          shadow-2xl shadow-black/40
-          hover:border-[#22c55e]
-          transition-all duration-300
-        ">
-          <CardHeader>
-            <CardTitle className="text-[#22c55e]">
-              Bodyweight Progress
-            </CardTitle>
-            <CardDescription>
-              Track weight changes over time
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <WeightChartAreaLinear />
-          </CardContent>
-        </Card>
+        <WeightChartAreaLinear />
 
       </div>
 

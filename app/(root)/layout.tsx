@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar"
 
 const layout = ({children}: {children: React.ReactNode}) => {
     return (
-        <main className = "font-work-sans">
+        <main>
         <Navbar></Navbar>
         {children}
 
